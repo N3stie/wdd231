@@ -1,0 +1,108 @@
+
+:root {
+  --primary: #1e3a8a;     /* Deep blue */
+  --secondary: #3b82f6;   /* Bright accent blue */
+  --background: #f1f5f9;  /* Soft gray-blue background */
+  --card: #ffffff;        /* White cards */
+  --text: #111827;        /* Dark text */
+  --muted: #6b7280;       /* Muted gray */
+  --accent: #10b981;      /* Teal accent */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+header span {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+nav {
+  background-color: var(--primary);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary);
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  background-color: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: var(--accent);
+  margin: 0 0.5rem;
+}

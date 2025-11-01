@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course Home Page for WDD231">
+  <meta name="author" content="Your Name">
+  <title>Home | WDD231</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/homepage-desktop.css">
+    <link rel="stylesheet" href="styles/homepage-phone.css">`
+  <!-- JS Files -->
+  <script src="scripts/homepage.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" class="logo">
+    <span class="site-name">Ernest Bonifacio</span>
+    <button id="menuButton" aria-label="Toggle navigation">☰</button>
+    <nav id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="chamber/index.html">Chamber Project</a>
+      <a href="final/index.html">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Massa facilisis per purus sit imperdiet cursus amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dui magna.</p>
+    </section>
+
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Student Photo" class="student-photo">
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="buttons">
+        <button id="allCourses">All</button>
+        <button id="cseCourses">CSE</button>
+        <button id="wddCourses">WDD</button>
+      </div>
+      <div id="courseContainer" class="course-container"></div>
+      <p id="totalCredits">Total credits for courses listed above: 0</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> | Your Name | Philippines</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
