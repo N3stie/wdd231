@@ -141,7 +141,7 @@ footer {
 }
 
 footer .socials img {
-  width: 25px;
+  width: 35px;
   margin: 0 0.5rem;
-  filter: brightness(0) invert(1);
+  filter: brightness(1) invert(1);
 }
