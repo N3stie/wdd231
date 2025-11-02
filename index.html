@@ -18,55 +18,65 @@
   <script src="scripts/homepage.js" defer></script>
 </head>
 <body>
+
   <header>
-    <div class="brand">
-      <img src="images/logo.svg" alt="Site Logo" class="logo">
-      <span class="site-name">Ernest Bonifacio</span>
-    </div>
-
-    <button id="menuButton" aria-label="Toggle navigation">☰</button>
-
-    <nav id="navMenu">
+    <div class="logo">✉ Site Name</div>
+    <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="chamber/index.html">Chamber Project</a></li>
-        <li><a href="final/index.html">Final Project</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1>Home</h1>
+    
+    <section class="info-section">
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Massa facilisis per purus sit imperdiet curae amet. Et fames lorem mi phasellus congue nascetur enim consectetur sociosqu natoque risus. Odio vehicula libero nisi viverra augue commodo pretium vivamus at duis magna.
+        </p>
+      </div>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Massa facilisis per purus sit imperdiet cursus amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dui magna.</p>
-    </section>
+       <div class="student-photo">
+        <h2>Student Photo</h2>
+        <img src="images/Nest.jpeg" alt="Student Photo">
+         </div>
 
-    <section class="student-photo">
-      <h2>Student Photo</h2>
-      <img src="images/Nest.jpeg" alt="Student Photo" class="student-photo">
     </section>
 
     <section class="courses">
       <h2>Web Certificate Courses</h2>
-      <div class="buttons">
-        <button id="allCourses">All</button>
-        <button id="cseCourses">CSE</button>
-        <button id="wddCourses">WDD</button>
+      <div class="course-filters">
+        <button>All</button>
+        <button>CSE</button>
+        <button>WDD</button>
       </div>
-      <div id="courseContainer" class="course-container"></div>
-      <p id="totalCredits">Total credits for courses listed above: 0</p>
+
+      <div class="course-list">
+        <div class="course">WDD 130</div>
+        <div class="course">WDD 131</div>
+        <div class="course">WDD 231</div>
+      </div>
+
+      <p class="credits">The total credits for courses listed above is 6</p>
     </section>
   </main>
 
   <footer>
     <div class="socials">
-      <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="github.svg" alt="GitHub"></a>
+      <a href="#"><img src="x.svg" alt="X"></a>
     </div>
-    <p>&copy; <span id="currentyear"></span> | Your Name | Philippines</p>
-    <p id="lastModified"></p>
+
+    <p>© 202X • Student Name • Utah, USA</p>
+    <p>Last Modification: 04/18/202X 15:14:48</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
