@@ -4,10 +4,10 @@ document.getElementById('lastModified').textContent = `Last Modification: ${docu
 
 // ===== Responsive Navigation =====
 const menuButton = document.getElementById('menuButton');
-const navMenu = document.getElementById('navMenu');
+const navMenu = document.querySelector('#navMenu ul');
 
 menuButton.addEventListener('click', () => {
-  navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+  navMenu.classList.toggle('show');
 });
 
 // ===== Course Data =====
