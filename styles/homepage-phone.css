@@ -1,4 +1,3 @@
-
 :root {
   --primary: #1e3a8a;     /* Deep blue */
   --secondary: #3b82f6;   /* Bright accent blue */
@@ -16,27 +15,53 @@ body {
   color: var(--text);
 }
 
+/* ===== HEADER (PHONE) ===== */
 header {
   background-color: var(--primary);
   color: white;
   padding: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* stack elements vertically */
+  align-items: flex-start;
+  position: relative;
 }
 
-header img {
+/* logo + site name together on left */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
   width: 40px;
   height: 40px;
 }
 
-header span {
+.site-name {
   font-weight: 600;
   font-size: 1.25rem;
 }
 
+/* hamburger button visible only on phone */
+#menuButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--secondary);
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+/* navigation (hidden by default) */
 nav {
+  width: 100%;
   background-color: var(--primary);
+  margin-top: 1rem;
 }
 
 nav ul {
@@ -54,15 +79,16 @@ nav ul.show {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav ul li a:hover {
   background-color: var(--secondary);
 }
 
+/* ===== MAIN CONTENT ===== */
 main {
   padding: 1rem;
 }
@@ -79,6 +105,7 @@ h1, h2 {
   color: var(--primary);
 }
 
+/* ===== BUTTONS ===== */
 button {
   background-color: var(--secondary);
   color: white;
@@ -94,6 +121,7 @@ button:hover {
   background-color: var(--accent);
 }
 
+/* ===== FOOTER ===== */
 footer {
   background-color: var(--primary);
   color: white;
