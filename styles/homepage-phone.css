@@ -1,0 +1,207 @@
+/* PHONE MODE STYLES */
+@media (max-width: 768px) {
+    
+    /* HEADER - Hamburger Menu */
+    header {
+        padding: 1rem;
+        text-align: left;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    header .logo {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+    
+    header .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* HAMBURGER BUTTON - VISIBLE IN PHONE */
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--light-text);
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1001;
+    }
+    
+    /* NAV MENU - HIDDEN BY DEFAULT IN PHONE */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    /* SHOW NAV WHEN ACTIVE */
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-align: left;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255,255,255,0.1);
+        color: var(--accent-color);
+    }
+    
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+    
+    /* MAIN */
+    main {
+        padding: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* INFO SECTION */
+    .info-section {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-me, 
+    .student-photo {
+        width: 100%;
+    }
+    
+    .about-me h2,
+    .student-photo h2 {
+        text-align: center;
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+        width: calc(100% + 3rem);
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    
+    .about-me p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .student-photo img {
+        max-width: 180px;
+        margin: 0.5rem auto;
+    }
+    
+    /* HORIZONTAL RULE - Added as per reference */
+    .info-section + .courses::before {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #ddd;
+        margin: 2rem 0;
+    }
+    
+    /* COURSES SECTION */
+    .courses {
+        padding: 1.5rem;
+        margin-top: 0;
+    }
+    
+    .courses h2 {
+        text-align: center;
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+        width: calc(100% + 3rem);
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+    
+    .course-filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .course-filters button {
+        padding: 0.7rem 1.2rem;
+        min-width: 70px;
+        font-size: 0.9rem;
+    }
+    
+    /* VERTICAL COURSE LIST FOR MOBILE */
+    .course-list {
+        gap: 0.6rem;
+        margin: 1.5rem 0;
+    }
+    
+    .course {
+        padding: 1rem 1.5rem;
+        max-width: 250px;
+        font-size: 0.9rem;
+        margin: 0 auto;
+    }
+    
+    .credits {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    /* FOOTER */
+    footer {
+        padding: 1.5rem 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .socials {
+        margin-bottom: 1rem;
+    }
+    
+    .socials a {
+        margin: 0 0.5rem;
+    }
+    
+    .socials img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin: 0.5rem 0;
+    }
+    
+    /* Hide regular desktop nav */
+    .nav-menu:not(.active) {
+        display: none;
+    }
+}
