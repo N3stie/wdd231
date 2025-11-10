@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Downtown Cafe",
+      "address": "123 Main Street, Springfield, IL 62701",
+      "phone": "(555) 123-4567",
+      "website": "https://downtowncafe.example.com",
+      "image": "cafe.jpg",
+      "membershipLevel": 3,
+      "description": "Family-owned coffee shop serving premium coffee and pastries since 1998.",
+      "category": "Food & Beverage"
+    },
+    {
+      "name": "Tech Solutions Inc",
+      "address": "456 Tech Park Drive, Springfield, IL 62702",
+      "phone": "(555) 234-5678",
+      "website": "https://techsolutions.example.com",
+      "image": "tech-company.jpg",
+      "membershipLevel": 2,
+      "description": "Complete IT services including network setup, cybersecurity, and cloud solutions.",
+      "category": "Technology"
+    },
+    {
+      "name": "Green Thumb Nursery",
+      "address": "789 Garden Lane, Springfield, IL 62703",
+      "phone": "(555) 345-6789",
+      "website": "https://greenthumb.example.com",
+      "image": "nursery.jpg",
+      "membershipLevel": 3,
+      "description": "Full-service garden center with plants, trees, and landscaping services.",
+      "category": "Home & Garden"
+    },
+    {
+      "name": "Family Medical Center",
+      "address": "321 Health Avenue, Springfield, IL 62704",
+      "phone": "(555) 456-7890",
+      "website": "https://familymedical.example.com",
+      "image": "medical-center.jpg",
+      "membershipLevel": 1,
+      "description": "Comprehensive healthcare services for the entire family.",
+      "category": "Healthcare"
+    },
+    {
+      "name": "Fit Life Gym",
+      "address": "654 Fitness Road, Springfield, IL 62705",
+      "phone": "(555) 567-8901",
+      "website": "https://fitlife.example.com",
+      "image": "gym.jpg",
+      "membershipLevel": 2,
+      "description": "State-of-the-art fitness facility with personal training and group classes.",
+      "category": "Fitness"
+    },
+    {
+      "name": "Book Nook",
+      "address": "987 Library Street, Springfield, IL 62706",
+      "phone": "(555) 678-9012",
+      "website": "https://booknook.example.com",
+      "image": "bookstore.jpg",
+      "membershipLevel": 1,
+      "description": "Independent bookstore featuring local authors and community events.",
+      "category": "Retail"
+    },
+    {
+      "name": "Auto Care Plus",
+      "address": "147 Garage Lane, Springfield, IL 62707",
+      "phone": "(555) 789-0123",
+      "website": "https://autocare.example.com",
+      "image": "auto-shop.jpg",
+      "membershipLevel": 3,
+      "description": "Complete automotive repair and maintenance services.",
+      "category": "Automotive"
+    },
+    {
+      "name": "Springfield Law Partners",
+      "address": "258 Justice Boulevard, Springfield, IL 62708",
+      "phone": "(555) 890-1234",
+      "website": "https://springfieldlaw.example.com",
+      "image": "law-firm.jpg",
+      "membershipLevel": 2,
+      "description": "Experienced legal services for business and personal matters.",
+      "category": "Professional Services"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+/* ===== DESKTOP STYLES (768px and up) ===== */
+@media screen and (min-width: 768px) {
+    /* Header & Navigation */
+    .header-content {
+        flex-direction: column; /* Keep column layout for title above nav */
+        justify-content: center;
+        padding: 0 var(--space-lg);
+    }
+    
+    .logo {
+        margin-bottom: var(--space-sm);
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: var(--space-md); /* More space on desktop */
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        margin-top: 0; /* Ensure no extra space */
+    }
+    
+    /* Hover effects for desktop only */
+    nav a:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* ===== LARGE DESKTOP (1024px and up) ===== */
+@media screen and (min-width: 1024px) {
+    .header-content {
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 2.2rem; /* Slightly larger title on big screens */
+    }
+    
+    nav ul {
+        gap: var(--space-lg); /* More space between nav items */
+    }
+}
+
+/* ===== EXTRA LARGE DESKTOP (1200px and up) ===== */
+@media screen and (min-width: 1200px) {
+    .grid-view {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Enhanced layouts for wide screens */
+    .member-card {
+        position: relative;
+        overflow: visible;
+    }
+    
+    .member-card:hover .member-info {
+        transform: translateY(0);
+    }
+}

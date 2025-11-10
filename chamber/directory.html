@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Springfield Chamber of Commerce</title>
+    <meta name="description" content="Explore our local business directory featuring chamber members in Springfield. Find contact information, services, and support local businesses.">
+    <meta name="author" content="Alex Johnson">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/chamber/images/logo.png" type="image/png">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Business Directory | Springfield Chamber of Commerce">
+    <meta property="og:description" content="Explore our local business directory featuring chamber members in Springfield. Find contact information, services, and support local businesses.">
+    <meta property="og:image" content="https://example.com/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://example.com/chamber/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/directory-desktop.css">
+    <link rel="stylesheet" href="styles/directory-phone.css">
+
+    <!-- JS Scripts -->
+    <script src="scripts/directory.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon"><img src="/chamber/images/logo.png" alt="Springfield Chamber of Commerce Logo" style="height: 2rem;"></span>
+                <h1>Springfield Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="page-title">Business Directory</h2>
+        
+        <div class="view-options">
+            <button id="grid-btn" class="view-btn active">Grid View</button>
+            <button id="list-btn" class="view-btn">List View</button>
+        </div>
+
+        <div id="member-container" class="member-container grid-view">
+            <!-- Members will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Springfield Chamber of Commerce</p>
+        <p>123 Commerce Street, Springfield</p>
+    </footer>
+</body>
+</html>

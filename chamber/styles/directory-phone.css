@@ -1,0 +1,102 @@
+/* ===== MOBILE STYLES (320px - 767px) ===== */
+
+/* Header & Navigation */
+.header-content {
+    padding: 0 var(--space-sm);
+}
+
+.logo {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: var(--space-xs); /* Small space below logo */
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: var(--space-sm); /* Space between title and nav */
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: var(--space-xs);
+    width: 100%;
+    margin-top: 0; /* Ensure no extra space */
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: var(--space-sm);
+    background-color: rgba(255, 255, 255, 0.05);
+    min-height: 44px; /* Better touch targets */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Content */
+.page-title {
+    font-size: 1.8rem;
+    margin-bottom: var(--space-md);
+}
+
+/* View Options */
+.view-options {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.view-btn {
+    width: 200px;
+}
+
+/* Member Display */
+.grid-view {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+}
+
+.member-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+}
+
+.list-membership {
+    margin-left: 0;
+    align-self: flex-start;
+}
+
+/* Footer */
+footer {
+    padding: var(--space-sm);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Small screen touch improvements */
+.view-btn {
+    padding: 1rem 1.5rem;
+    min-height: 44px; /* Better touch targets */
+}
+
+nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-website {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
