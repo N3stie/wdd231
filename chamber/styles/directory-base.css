@@ -96,19 +96,19 @@ header {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
-    margin-bottom: 0; /* Remove bottom margin from logo */
+    margin-bottom: 0;
 }
 
-.logo-icon {
-    font-size: 2rem;
-    color: var(--accent-gold);
+.logo-icon img {
+    height: 2rem; /* Moved from inline style to CSS */
+    width: auto;
 }
 
 h1 {
     font-size: 1.8rem;
     color: var(--white);
     text-align: center;
-    margin-bottom: var(--space-sm); /* Space between title and nav */
+    margin-bottom: var(--space-sm);
 }
 
 /* ===== NAVIGATION ===== */
