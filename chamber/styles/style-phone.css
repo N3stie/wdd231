@@ -1,0 +1,89 @@
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    #hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    nav li {
+        width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hero-image {
+        height: 300px;
+    }
+    
+    .hero-content {
+        padding: 1rem;
+        width: 90%;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .weather-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #forecast-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+}
