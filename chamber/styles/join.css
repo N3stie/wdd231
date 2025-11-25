@@ -1,0 +1,331 @@
+/* Join Page Specific Styles - Works with existing responsive framework */
+
+/* Main Layout */
+.join-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.join-main h1 {
+    text-align: center;
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 2rem;
+}
+
+/* Membership Levels Section */
+.membership-levels {
+    margin-bottom: 3rem;
+}
+
+.membership-levels h2 {
+    text-align: center;
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.membership-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow, 0 2px 10px rgba(0,0,0,0.1));
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Membership level specific colors */
+.membership-card.np {
+    border-color: #27ae60;
+}
+
+.membership-card.bronze {
+    border-color: #cd7f32;
+}
+
+.membership-card.silver {
+    border-color: #c0c0c0;
+}
+
+.membership-card.gold {
+    border-color: #ffd700;
+}
+
+.membership-card h3 {
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.membership-card .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color, #3498db);
+    margin: 1rem 0;
+}
+
+.membership-card .description {
+    color: var(--text-light, #666);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.benefits-btn {
+    background: var(--accent-color, #3498db);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+.benefits-btn:hover {
+    background: var(--accent-dark, #2980b9);
+    transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.close-modal {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--text-light, #666);
+    line-height: 1;
+    padding: 0.25rem;
+}
+
+.close-modal:hover {
+    color: var(--primary-color, #333);
+}
+
+.modal-content h3 {
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color, #eee);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.modal-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-color, #27ae60);
+    font-weight: bold;
+}
+
+.modal-content li:last-child {
+    border-bottom: none;
+}
+
+/* Form Styles */
+.membership-form {
+    background: var(--background-light, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 1px solid var(--border-color, #ddd);
+}
+
+.membership-form h2 {
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color, #2c3e50);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color, #3498db);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: var(--error-color, #e74c3c);
+}
+
+.submit-btn {
+    background: var(--cta-color, #e74c3c);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: var(--cta-dark, #c0392b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Thank You Page Styles */
+.thankyou-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.thankyou-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow, 0 2px 10px rgba(0,0,0,0.1));
+}
+
+.submission-details {
+    background: var(--background-light, #f8f9fa);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.submission-details h2 {
+    color: var(--primary-color, #2c3e50);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.submission-details p {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color, #eee);
+}
+
+.submission-details p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.back-home {
+    display: inline-block;
+    background: var(--accent-color, #3498db);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.back-home:hover {
+    background: var(--accent-dark, #2980b9);
+    transform: translateY(-2px);
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.4s ease-out;
+}

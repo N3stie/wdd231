@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    /* Mobile navigation */
+    #hamburger-menu {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    /* Join page mobile adjustments */
+    .join-main {
+        padding: 1rem;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .membership-form {
+        padding: 1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .thankyou-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}

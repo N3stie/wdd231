@@ -1,0 +1,29 @@
+/* These should already exist in your desktop styles */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --cta-color: #e74c3c;
+    --text-light: #666;
+    --background-light: #f8f9fa;
+    --border-color: #ddd;
+    --card-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Desktop navigation */
+#hamburger-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}

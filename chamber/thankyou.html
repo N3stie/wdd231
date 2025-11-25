@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Chamber of Commerce. We're excited to have you as a member.">
+    <meta name="author" content="Your Name">
+    <title>Thank You | WDD231 | Chamber of Commerce</title>
+
+    <!-- Google Font preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/style-phone.css">
+    <link rel="stylesheet" href="styles/style-desktop.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as other pages -->
+    </header>
+
+    <main class="thankyou-main">
+        <div class="thankyou-container">
+            <h1>Thank You for Joining!</h1>
+            <div class="submission-details">
+                <h2>Application Received</h2>
+                <div id="submissionDetails">
+                    <!-- Details populated by JavaScript -->
+                </div>
+            </div>
+            <p>We will review your application and contact you within 2 business days.</p>
+            <a href="index.html" class="back-home">Return to Homepage</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script>
+        // Display submitted data from URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const submissionDetails = document.getElementById('submissionDetails');
+            
+            if (urlParams.toString()) {
+                submissionDetails.innerHTML = `
+                    <p><strong>Name:</strong> ${urlParams.get('firstName')} ${urlParams.get('lastName')}</p>
+                    <p><strong>Email:</strong> ${urlParams.get('email')}</p>
+                    <p><strong>Phone:</strong> ${urlParams.get('phone')}</p>
+                    <p><strong>Business:</strong> ${urlParams.get('businessName')}</p>
+                    <p><strong>Membership Level:</strong> ${urlParams.get('membershipLevel')}</p>
+                    <p><strong>Submitted:</strong> ${new Date(urlParams.get('timestamp')).toLocaleString()}</p>
+                `;
+            } else {
+                submissionDetails.innerHTML = '<p>No submission data found.</p>';
+            }
+            
+            // Set current year and last modified
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            document.getElementById('last-modified').textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>
