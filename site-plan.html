@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewFinder - Site Plan</title>
+    <meta name="description" content="Site plan for the BrewFinder website project.">
+    <meta name="author" content="Your Name">
+    <!-- Phone styles first -->
+    <link rel="stylesheet" href="styles/site-plan-phone.css" media="screen and (max-width: 768px)">
+    <!-- Desktop styles -->
+    <link rel="stylesheet" href="styles/site-plan-desktop.css" media="screen and (min-width: 769px)">
+</head>
+<body>
+    <header>
+        <h1>BrewFinder Site Plan</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>BrewFinder</strong></p>
+            <p>This name clearly identifies the site's purpose: to help users find local breweries. It's short, memorable, and uses alliteration for better brand recognition.</p>
+            <p><em>Optional domain availability:</em> brew-finder.org</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site provides a user-friendly directory of local craft breweries, featuring key details like location, contact information, and descriptions to help enthusiasts discover new places to visit.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>I have friends visiting this weekend. Which breweries in the area have a food menu?</li>
+                <li>What's the phone number and address for 'The Hoppy Tavern'?</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Ernest Bonifacio</p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
