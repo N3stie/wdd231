@@ -1,0 +1,60 @@
+const businesses = [
+    {
+        "id": 1,
+        "name": "Volt Valley Museum of Art",
+        "address": "456 Artisan Way, Volt Valley",
+        "description": "Featuring contemporary and classical art exhibitions from local and international artists. Interactive exhibits for all ages.",
+        "image": "images/museum.webp"
+    },
+    {
+        "id": 2,
+        "name": "Thunderbolt Park",
+        "address": "789 Nature Trail, Volt Valley",
+        "description": "150-acre park with walking trails, playgrounds, picnic areas, and beautiful river views. Perfect for family outings.",
+        "image": "images/park.webp"
+    },
+    {
+        "id": 3,
+        "name": "Volt Performing Arts Center",
+        "address": "321 Stage Street, Volt Valley",
+        "description": "State-of-the-art venue hosting Broadway shows, concerts, and local theater productions throughout the year.",
+        "image": "images/theater.webp"
+    },
+    {
+        "id": 4,
+        "name": "Downtown Shopping Plaza",
+        "address": "654 Retail Road, Volt Valley",
+        "description": "Premier shopping destination with over 100 stores, restaurants, and entertainment options in the heart of downtown.",
+        "image": "images/mall.webp"
+    },
+    {
+        "id": 5,
+        "name": "Electric Gardens",
+        "address": "987 Bloom Avenue, Volt Valley",
+        "description": "Stunning 50-acre gardens featuring exotic plants, seasonal flower displays, and educational programs for visitors.",
+        "image": "images/garden.webp"
+    },
+    {
+        "id": 6,
+        "name": "Community Sports Arena",
+        "address": "159 Athletic Drive, Volt Valley",
+        "description": "Modern sports facility hosting local tournaments, fitness classes, and community events for all skill levels.",
+        "image": "images/stadium.webp"
+    },
+    {
+        "id": 7,
+        "name": "Public Library & Tech Hub",
+        "address": "753 Knowledge Lane, Volt Valley",
+        "description": "Beyond books - featuring maker spaces, digital labs, and community workshops for lifelong learning.",
+        "image": "images/library.webp"
+    },
+    {
+        "id": 8,
+        "name": "Wildlife Adventure Park",
+        "address": "286 Safari Street, Volt Valley",
+        "description": "Home to over 500 animals in natural habitats. Educational programs and conservation initiatives.",
+        "image": "images/zoo.webp"
+    }
+];
+
+export default businesses;

@@ -1,0 +1,97 @@
+/* Tablet screens (641px-1024px) */
+@media (min-width: 641px) {
+    /* HIDE HAMBURGER on tablet+ */
+    #hamburger-btn {
+        display: none !important;
+    }
+    
+    /* ALWAYS SHOW NAVIGATION on tablet+ */
+    #primary-nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    
+    #primary-nav a {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Business Cards - 2 columns */
+    .business-cards {
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .header-content {
+        justify-content: space-between;
+        padding: 0 2rem;
+        text-align: left;
+    }
+    
+    .header-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        text-align: left;
+    }
+    
+    /* Hover effects for tablet and larger */
+    .business-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .business-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+    
+    .hero-section h2 {
+        font-size: 2.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    .contact-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        gap: 3rem;
+    }
+    
+    .contact-info {
+        flex: 1;
+    }
+    
+    .social-links {
+        flex: 0 0 auto;
+        text-align: left;
+    }
+    
+    .social-icons {
+        justify-content: flex-start;
+    }
+}

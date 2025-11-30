@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Volt Chamber of Commerce</title>
+    <meta name="description" content="Discover Volt Valley's top attractions, parks, museums, and entertainment venues. Explore what makes our city great!">
+    <meta name="author" content="Ernest Bonifacio">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Volt Chamber Logo" width="100" height="100">
+            <div class="header-text">
+                <h1>Volt Chamber of Commerce</h1>
+                
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn" aria-label="Menu">☰</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <section id="visit-message" class="visit-banner">
+            <!-- Visit message will be inserted here by JavaScript -->
+        </section>
+
+        <div class="hero-section">
+            <h2>Discover Volt Valley's Treasures</h2>
+            <p class="subtitle">Explore the best attractions, parks, and cultural spots in our vibrant city</p>
+        </div>
+        
+        <div class="business-cards">
+            <!-- Cards will be dynamically generated -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h3>Volt Chamber of Commerce</h3>
+                    <div class="contact-details">
+                        <p>📍 123 Commerce Street</p>
+                        <p>🏙️ Volt Valley, VT 12345</p>
+                        <p>📧 info@voltchamber.org</p>
+                        <p>📞 (555) 123-4567</p>
+                    </div>
+                </div>
+                <!-- <div class="social-links">
+                    <h4>Follow Us</h4>
+                     <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="images/facebook.webp" alt="Facebook" width="30" height="30"></a>
+                        <a href="#" aria-label="Twitter"><img src="images/twitter.webp" alt="Twitter" width="30" height="30"></a>
+                        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30"></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Volt Chamber of Commerce | Ernest Bonifacio | WDD 231 Project</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
