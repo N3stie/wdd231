@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Confirmation | Paws & Play</title>
+    <meta name="description" content="Booking confirmation for Paws & Play. We'll contact you within 24 hours to confirm your booking.">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Booking Confirmation | Paws & Play">
+    <meta property="og:description" content="Thanks — your booking request has been received. We'll contact you within 24 hours to confirm.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/booking-confirmation.html">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+
+    <!-- Google Fonts preconnects + stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logopaws.png" alt="Paws & Play Logo">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🐕</span>
+                <h1>Paws & Play</h1>
+            </div>
+            <a href="index.html" class="btn">← Back to Home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <h1>🎉 Booking Request Received!</h1>
+            <p>Thank you for choosing Paws & Play. We'll contact you within 24 hours to confirm your booking.</p>
+            
+            <div class="service-card">
+                <h2>Your Booking Details:</h2>
+                <div id="form-data">
+                    <!-- Data will be displayed here -->
+                </div>
+            </div>
+
+            <div class="next-steps mt-3">
+                <h3>What Happens Next?</h3>
+                <ol>
+                    <li>We'll call you to confirm details</li>
+                    <li>Schedule a meet & greet with your walker</li>
+                    <li>Sign digital waiver</li>
+                    <li>First walk scheduled!</li>
+                </ol>
+            </div>
+
+            <a href="index.html" class="btn mt-3">Return to Homepage</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paws & Play Dog Walking Services</p>
+        </div>
+    </footer>
+
+    <script>
+        // Parse URL parameters and display them
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const container = document.getElementById('form-data');
+            
+            if (params.toString()) {
+                let html = '<ul>';
+                for (const [key, value] of params) {
+                    const label = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                    html += `<li><strong>${label}:</strong> ${value || 'Not specified'}</li>`;
+                }
+                html += '</ul>';
+                container.innerHTML = html;
+            } else {
+                container.innerHTML = '<p>No form data received. Please submit the contact form first.</p>';
+            }
+            
+            // Save to localStorage
+            const formData = Object.fromEntries(params);
+            localStorage.setItem('lastBooking', JSON.stringify(formData));
+        });
+    </script>
+</body>
+</html>

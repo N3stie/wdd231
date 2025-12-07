@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Booking | Paws & Play</title>
+    <meta name="description" content="Book a dog walking service or contact us for more information. We serve the local area with reliable pet care.">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph (social sharing) -->
+    <meta property="og:title" content="Contact & Booking | Paws & Play">
+    <meta property="og:description" content="Book a dog walking service or contact us for more information. We'll respond within 24 hours to confirm your request.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/contact.html">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+
+    <!-- Google Fonts preconnects + stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+     <link rel="icon" href="images/logopaws.png" alt="Paws & Play Logo">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Scripts (deferred) -->
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                <h1>Paws & Play</h1>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services & Rates</a></li>
+                    <li><a href="contact.html" class="active">Contact & Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact & Booking</h1>
+        
+        <div class="form-container">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="solo">Solo Walk (30 min)</option>
+                            <option value="group">Group Adventure (1 hour)</option>
+                            <option value="puppy">Puppy Visit</option>
+                            <option value="sitting">Pet Sitting</option>
+                            <option value="feeding">Feeding Service</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dogName">Dog's Name *</label>
+                    <input type="text" id="dogName" name="dogName" required placeholder="e.g., Max">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your dog, special needs, preferred walk times, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Start Date</label>
+                    <input type="date" id="preferredDate" name="preferredDate">
+                </div>
+
+                <button type="submit" class="btn">Submit Booking Request</button>
+            </form>
+        </div>
+
+        <div class="contact-info mt-3">
+            <h2>Contact Information</h2>
+            <div class="service-card">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:exampleemail@pawsandplay.com">exampleemail@pawsandplay.com</a></p>
+                
+                <h3>📞 Phone</h3>
+                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                
+                <h3>📍 Service Area</h3>
+                <p>We currently serve the following neighborhoods:</p>
+                <ul>
+                    <li>Downtown area</li>
+                    <li>North suburbs</li>
+                    <li>East side parks</li>
+                    <li>West end communities</li>
+                </ul>
+                <p class="text-muted">Note: Contact us to check if we serve your specific area.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Paws & Play Dog Walking Services</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a> |
+                <a href="https://youtu.be/demo-video-link" target="_blank">Project Video</a> |
+                <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/contact.js"></script>
+</body>
+</html>

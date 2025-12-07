@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Solo Adventure Walk",
+    "duration": "30 minutes",
+    "price": "$25",
+    "category": "Basic",
+    "popular": true,
+    "forPuppies": true,
+    "maxDogs": 1,
+    "description": "One-on-one attention for your pup. Perfect for dogs who prefer solitude or need special attention. Includes water breaks and basic commands reinforcement.",
+    "icon": "🐕",
+    "features": ["Private walk", "Photo updates", "Water provided", "Basic training"]
+  },
+  {
+    "id": 2,
+    "name": "Group Park Adventure",
+    "duration": "1 hour",
+    "price": "$35",
+    "category": "Premium",
+    "popular": true,
+    "forPuppies": false,
+    "maxDogs": 6,
+    "description": "Socialization fun at the local park! Great for energetic dogs who love making friends. Supervised group play and exercise.",
+    "icon": "🐕🐕",
+    "features": ["Socialization", "Park access", "Group play", "Safety monitored"]
+  },
+  {
+    "id": 3,
+    "name": "Puppy Introduction",
+    "duration": "45 minutes",
+    "price": "$30",
+    "category": "Special",
+    "popular": false,
+    "forPuppies": true,
+    "maxDogs": 1,
+    "description": "Gentle introduction to walking for puppies 3-12 months. Focus on leash training and positive reinforcement.",
+    "icon": "🐶",
+    "features": ["Leash training", "Potty breaks", "Social exposure", "Gentle pace"]
+  },
+  {
+    "id": 4,
+    "name": "Senior Stroll",
+    "duration": "30 minutes",
+    "price": "$28",
+    "category": "Special",
+    "popular": false,
+    "forPuppies": false,
+    "maxDogs": 1,
+    "description": "Gentle, slow-paced walks tailored to senior dogs. Focus on comfort, short routes, and mobility support.",
+    "icon": "🐾",
+    "features": ["Short routes", "Gentle pace", "Mobility assistance", "Calm environment"]
+  }
+]
