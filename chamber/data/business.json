@@ -55,6 +55,6 @@ const businesses = [
         "description": "Home to over 500 animals in natural habitats. Educational programs and conservation initiatives.",
         "image": "images/zoo.webp"
     }
-];
+]
 
 export default businesses;
